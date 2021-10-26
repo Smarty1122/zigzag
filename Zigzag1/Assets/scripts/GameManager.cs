@@ -38,7 +38,9 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         UImanager.instance.GameOver();
+        UnityAdManager.instance.ShowAd();
         ScoreManager.instance.Stopscore();
         gameOver = true;
+        
     }
 }
